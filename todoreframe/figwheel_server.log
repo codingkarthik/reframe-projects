@@ -1,0 +1,439 @@
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:28  column:11  ----[0m
+
+  [1mUse of undeclared Var todoreframe.core/todos-atom[0m
+
+  [36m24[0m  [36m  (log "Error Handler"))[0m
+  [36m25[0m  [36m[0m
+  [36m26[0m  [36m(defn show-output[0m
+  [36m27[0m  [36m  [response][0m
+  [33m28[0m  [1m  (reset! todos-atom response)[0m
+  [0m  [0m  [33m          ^--- Use of undeclared Var todoreframe.core/todos-atom[0m
+  [36m29[0m  [36m  (js/alert (str response)))[0m
+  [36m30[0m  [36m[0m
+  [36m31[0m  [36m(defn show-tasks[0m
+  [36m32[0m  [36m  [][0m
+  [36m33[0m  [36m  [:div[0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:37  column:18  ----[0m
+
+  [1mUse of undeclared Var todoreframe.core/todos-atom[0m
+
+  [36m33[0m  [36m  [:div[0m
+  [36m34[0m  [36m   [:ul[0m
+  [36m35[0m  [36m    (doall (map (fn [a][0m
+  [36m36[0m  [36m                  [:li (:task a)])[0m
+  [33m37[0m  [1m                @todos-atom))]])[0m
+  [0m  [0m  [33m                 ^--- Use of undeclared Var todoreframe.core/todos-atom[0m
+  [36m38[0m  [36m[0m
+  [36m39[0m  [36m(defn logout[0m
+  [36m40[0m  [36m  [][0m
+  [36m41[0m  [36m  (do[0m
+  [36m42[0m  [36m    (js/alert "Logged out Succesful")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:43  column:13  ----[0m
+
+  [1mUse of undeclared Var todoreframe.core/current-user[0m
+
+  [36m39[0m  [36m(defn logout[0m
+  [36m40[0m  [36m  [][0m
+  [36m41[0m  [36m  (do[0m
+  [36m42[0m  [36m    (js/alert "Logged out Succesful")[0m
+  [33m43[0m  [1m    (reset! current-user "")[0m
+  [0m  [0m  [33m            ^--- Use of undeclared Var todoreframe.core/current-user[0m
+  [36m44[0m  [36m    (secretary/dispatch! "/logout")[0m
+  [36m45[0m  [36m    #_(reset! current-page "login-page")))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.749 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:37  column:18  ----[0m
+
+  [1mUse of undeclared Var todoreframe.core/todos-atom[0m
+
+  [36m33[0m  [36m  [:div[0m
+  [36m34[0m  [36m   [:ul[0m
+  [36m35[0m  [36m    (doall (map (fn [a][0m
+  [36m36[0m  [36m                  [:li (:task a)])[0m
+  [33m37[0m  [1m                @todos-atom))]])[0m
+  [0m  [0m  [33m                 ^--- Use of undeclared Var todoreframe.core/todos-atom[0m
+  [36m38[0m  [36m[0m
+  [36m39[0m  [36m(defn logout[0m
+  [36m40[0m  [36m  [][0m
+  [36m41[0m  [36m  (do[0m
+  [36m42[0m  [36m    (js/alert "Logged out Succesful")[0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:43  column:13  ----[0m
+
+  [1mUse of undeclared Var todoreframe.core/current-user[0m
+
+  [36m39[0m  [36m(defn logout[0m
+  [36m40[0m  [36m  [][0m
+  [36m41[0m  [36m  (do[0m
+  [36m42[0m  [36m    (js/alert "Logged out Succesful")[0m
+  [33m43[0m  [1m    (reset! current-user "")[0m
+  [0m  [0m  [33m            ^--- Use of undeclared Var todoreframe.core/current-user[0m
+  [36m44[0m  [36m    (secretary/dispatch! "/logout")[0m
+  [36m45[0m  [36m    #_(reset! current-page "login-page")))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.668 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:43  column:13  ----[0m
+
+  [1mUse of undeclared Var todoreframe.core/current-user[0m
+
+  [36m39[0m  [36m(defn logout[0m
+  [36m40[0m  [36m  [][0m
+  [36m41[0m  [36m  (do[0m
+  [36m42[0m  [36m    (js/alert "Logged out Succesful")[0m
+  [33m43[0m  [1m    (reset! current-user "")[0m
+  [0m  [0m  [33m            ^--- Use of undeclared Var todoreframe.core/current-user[0m
+  [36m44[0m  [36m    (secretary/dispatch! "/logout")[0m
+  [36m45[0m  [36m    #_(reset! current-page "login-page")))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.644 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.609 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:98  column:42  ----[0m
+
+  [1mUse of undeclared Var todoreframe.core/show-output-login[0m
+
+  [36m 94[0m  [36m                                     :password password}[0m
+  [36m 95[0m  [36m                            :format :json[0m
+  [36m 96[0m  [36m                            :response-format :json[0m
+  [36m 97[0m  [36m                            :keywords? true[0m
+  [33m 98[0m  [1m                            :handler show-output-login[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var todoreframe.core/show-output-login[0m
+  [36m 99[0m  [36m                            :error-handler error-handler})))}[0m
+  [36m100[0m  [36m[:div [:input {:type "text"[0m
+  [36m101[0m  [36m               :id "username"}][0m
+  [36m102[0m  [36m [:input {:type "text"[0m
+  [36m103[0m  [36m          :id "password"}][0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.585 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:97  column:42  ----[0m
+
+  [1mUse of undeclared Var todoreframe.core/show-output-login[0m
+
+  [36m 93[0m  [36m                                     :password password}[0m
+  [36m 94[0m  [36m                            :format :json[0m
+  [36m 95[0m  [36m                            :response-format :json[0m
+  [36m 96[0m  [36m                            :keywords? true[0m
+  [33m 97[0m  [1m                            :handler show-output-login[0m
+  [0m   [0m  [33m                                     ^--- Use of undeclared Var todoreframe.core/show-output-login[0m
+  [36m 98[0m  [36m                            :error-handler error-handler})))}[0m
+  [36m 99[0m  [36m[:div [:input {:type "text"[0m
+  [36m100[0m  [36m               :id "username"}][0m
+  [36m101[0m  [36m [:input {:type "text"[0m
+  [36m102[0m  [36m          :id "password"}][0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.6 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:53  column:15  ----[0m
+
+  [1mUse of undeclared Var todoreframe.core/current-user[0m
+
+  [36m49[0m  [36m(if (:status response)[0m
+  [36m50[0m  [36m  (do[0m
+  [36m51[0m  [36m    #_(js/alert (str response))[0m
+  [36m52[0m  [36m    #_(reset! current-page "home-page")[0m
+  [33m53[0m  [1m    (reset! current-user (:username response))[0m
+  [0m  [0m  [33m            ^--- Use of undeclared Var todoreframe.core/current-user[0m
+  [36m54[0m  [36m    (js/alert (str response "@@@" ))[0m
+  [36m55[0m  [36m    (secretary/dispatch! "/todo"))[0m
+  [36m56[0m  [36m  (do[0m
+  [36m57[0m  [36m    (js/alert "Better luck next time"))))[0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.597 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.547 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.549 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.525 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.512 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.526 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.539 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.497 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.516 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.541 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.533 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.5 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.805 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/goog/deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/cljs_deps.js
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.925 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.823 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.689 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.696 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.667 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/subscriptions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:28  column:16  ----[0m
+
+  [1mUse of undeclared Var todoreframe.core/t[0m
+
+  [36m24[0m  [36m  (log "Error Handler"))[0m
+  [36m25[0m  [36m[0m
+  [36m26[0m  [36m(defn show-output[0m
+  [36m27[0m  [36m  [response][0m
+  [33m28[0m  [1m  (rf/dispatch t response)[0m
+  [0m  [0m  [33m               ^--- Use of undeclared Var todoreframe.core/t[0m
+  [36m29[0m  [36m  (js/alert (str response)))[0m
+  [36m30[0m  [36m[0m
+  [36m31[0m  [36m(defn show-tasks[0m
+  [36m32[0m  [36m  [][0m
+  [36m33[0m  [36m  [:div[0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.751 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/handlers.cljs   line:28  column:27  ----[0m
+
+  [1mUse of undeclared Var todoreframe.handlers/tasks[0m
+
+  [36m25[0m  [36m(reg-event-db[0m
+  [36m26[0m  [36m :tasks[0m
+  [36m27[0m  [36m (fn [db [_ user]][0m
+  [33m28[0m  [1m   (update-in db [:tasks] tasks)))[0m
+  [0m  [0m  [33m                          ^--- Use of undeclared Var todoreframe.handlers/tasks[0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/handlers.cljs  ----[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:28  column:16  ----[0m
+
+  [1mUse of undeclared Var todoreframe.core/t[0m
+
+  [36m24[0m  [36m  (log "Error Handler"))[0m
+  [36m25[0m  [36m[0m
+  [36m26[0m  [36m(defn show-output[0m
+  [36m27[0m  [36m  [response][0m
+  [33m28[0m  [1m  (rf/dispatch t response)[0m
+  [0m  [0m  [33m               ^--- Use of undeclared Var todoreframe.core/t[0m
+  [36m29[0m  [36m  (js/alert (str response)))[0m
+  [36m30[0m  [36m[0m
+  [36m31[0m  [36m(defn show-tasks[0m
+  [36m32[0m  [36m  [][0m
+  [36m33[0m  [36m  [:div[0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.723 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.601 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.716 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/subscriptions.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.551 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.558 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.595 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.576 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.588 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.553 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.571 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.567 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.546 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.617 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.551 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/handlers.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.535 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.498 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[36m----  Compiler Warning on   src/cljs/todoreframe/core.cljs   line:45  column:6  ----[0m
+
+  [1mUse of undeclared Var secretary.core/dispatch[0m
+
+  [36m41[0m  [36m  [][0m
+  [36m42[0m  [36m  (do[0m
+  [36m43[0m  [36m    (js/alert "Logged out Succesfully")[0m
+  [36m44[0m  [36m    (rf/dispatch [:current-user ""])[0m
+  [33m45[0m  [1m    (secretary/dispatch "/login")))[0m
+  [0m  [0m  [33m     ^--- Use of undeclared Var secretary.core/dispatch[0m
+  [36m46[0m  [36m[0m
+  [36m47[0m  [36m(defn show-output-login[0m
+  [36m48[0m  [36m  [response][0m
+  [36m49[0m  [36m  (if (:status response)[0m
+  [36m50[0m  [36m    (do[0m
+
+[36m----  Compiler Warning : Please see src/cljs/todoreframe/core.cljs  ----[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.584 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.5 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.54 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.492 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.518 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.504 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.51 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.52 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.505 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.52 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.495 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.511 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+[0mCompiling "target/cljsbuild/public/js/app.js" from ["src/cljs" "src/cljc" "env/dev/cljs"]...[0m
+[32mSuccessfully compiled "target/cljsbuild/public/js/app.js" in 0.529 seconds.[0m
+notifying browser that file changed:  target/cljsbuild/public/js/out/todoreframe/core.js
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
+Notifying browser that CSS file changed: resources/public/css/screen.css
